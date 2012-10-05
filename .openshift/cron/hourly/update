@@ -1,0 +1,8 @@
+#!/bin/bash
+set -x
+curl -s http://$OPENSHIFT_APP_DNS/cron/m_desert.php
+curl -s http://$OPENSHIFT_APP_DNS/cron/m_faval.php
+curl -s http://$OPENSHIFT_APP_DNS/cron/m_fleda.php
+curl -s http://$OPENSHIFT_APP_DNS/cron/m_mersey.php
+curl -s http://$OPENSHIFT_APP_DNS/cron/m_musilka.php
+curl -s http://$OPENSHIFT_APP_DNS/cron/m_perpetuum.php
