@@ -16,14 +16,14 @@ if($_debug) {
 
 header("Content-Type: text/html; charset=utf-8");
 
-mysql_connect("localhost", "root", "");
-mysql_select_db("kultura");
+mysql_connect($_ENV['OPENSHIFT_DB_HOST'], $_ENV['OPENSHIFT_DB_USERNAME'], $_ENV['OPENSHIFT_DB_PASSWORD']);
+mysql_select_db($_ENV['OPENSHIFT_GEAR_NAME']);
 
 mysql_query("set NAMES 'utf8'");
 #mysql_query("set character set utf8");
 
-$_DATA['base_href'] = "http://kultura/";
-$_DATA['base_path'] = "/home/furby/Projects/kultura/";
+$_DATA['base_href'] = 'http://'.$_ENV['OPENSHIFT_APP_DNS'].'/';
+$_DATA['base_path'] = $_ENV['OPENSHIFT_REPO_DIR'].'php/';
 
 $Smarty = new Smarty();
 $Smarty->template_dir = "lib/templates/";

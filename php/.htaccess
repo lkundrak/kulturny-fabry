@@ -1,4 +1,4 @@
-php_value auto_prepend_file /home/furby/Projects/kultura/lib/autoload.php
+php_value auto_prepend_file lib/autoload.php
 php_flag display_errors on
 
 RewriteEngine On

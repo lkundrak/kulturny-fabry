@@ -1,5 +1,5 @@
 <?php
-$path = "/home/furby/Projects/kultura/";
+$path = $_ENV['OPENSHIFT_REPO_DIR'].'php/';
 
 if(!defined('AUTOLOAD')) {
 	if(substr(phpversion(), 0, 1) == '5') {
