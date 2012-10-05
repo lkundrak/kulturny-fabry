@@ -1,0 +1,9 @@
+php_value auto_prepend_file /home/furby/Projects/kultura/lib/autoload.php
+php_flag display_errors on
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule venue/([0-9]{1,})-.{1,}\/? index.php?venue_id=$1 [L,QSA]
