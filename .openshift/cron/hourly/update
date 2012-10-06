@@ -6,3 +6,4 @@ curl -s http://$OPENSHIFT_APP_DNS/cron/m_fleda.php
 curl -s http://$OPENSHIFT_APP_DNS/cron/m_mersey.php
 curl -s http://$OPENSHIFT_APP_DNS/cron/m_musilka.php
 curl -s http://$OPENSHIFT_APP_DNS/cron/m_perpetuum.php
+curl -s http://$OPENSHIFT_APP_DNS/cron/m_pekarna.php

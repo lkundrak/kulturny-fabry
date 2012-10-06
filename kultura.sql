@@ -58,7 +58,7 @@ CREATE TABLE `venue` (
 
 LOCK TABLES `venue` WRITE;
 /*!40000 ALTER TABLE `venue` DISABLE KEYS */;
-INSERT INTO `venue` VALUES (1,'desert','http://www.dodesertu.com/',0,0),(3,'faval','http://www.faval.cz/',0,0),(2,'fleda','http://fleda.cz/',0,0),(6,'mersey','http://mersey.cz/',0,0),(5,'musilka','http://www.ksomega.cz/',0,0),(4,'perpetuum','http://perpetuum.cz/',0,0);
+INSERT INTO `venue` VALUES (1,'desert','http://www.dodesertu.com/',0,0),(3,'faval','http://www.faval.cz/',0,0),(2,'fleda','http://fleda.cz/',0,0),(6,'mersey','http://mersey.cz/',0,0),(5,'musilka','http://www.ksomega.cz/',0,0),(4,'perpetuum','http://perpetuum.cz/',0,0),(7,'pekarna','http://www.starapekarna.cz/',0,0);
 /*!40000 ALTER TABLE `venue` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
